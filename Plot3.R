@@ -19,7 +19,7 @@ rm(powerTemp)
 
 #Create Plot3
 png("plot3.png",480,480)
-plot(power$Sub_metering_1~power$DateTime, ylab = "Global Active Power (kilowatts)", xlab = "", type="n")
+plot(power$Sub_metering_1~power$DateTime, ylab = "Energy Sub Metering", xlab = "", type="n")
 legend("topright", lty = c(1,1,1), col = (c("black","blue","red")), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 points(power$Sub_metering_1~power$DateTime, type="l")
 points(power$Sub_metering_2~power$DateTime, type="l", col="red")
